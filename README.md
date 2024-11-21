@@ -1,24 +1,35 @@
 # Configuração do programa
+- Pasta front: front end da aplicação (index.html)
 
+- PASTA SERVERV2:
 
-# Importar sql 
+- .env variaveis de ambiente
+
+- test.js teste de conexão do banco de dados
+
+- services.js importar os servicos no banco de dados
+
+- app.js arquivo de inicialização da api
+
+# 1.Importar sql 
 -Banco de dados: Postgres
 
-1 - no Pg adming criar banco de dados "web"
+- no Pg adming criar banco de dados "web"
 
-2 - importar as tabelas usando o arquivo backup.sql
+- importar as tabelas usando o arquivo backup.sql
 
-Obs: por padrão o banco não possui nenhum dado
-# Importar serviços
-3 - abrir pasta serverV2 no terminal
+# 2.Configurar banco de dados (arquivo .env)
+DB_USER=postgres
 
-4 - Importar serviços no banco: node services.js
+DB_HOST=localhost
 
-# Envio de email
-5 - Configurar api do email. (opcional)
+DB_DATABASE=web
 
-no arquivo .env
+DB_PASSWORD=
 
+DB_PORT=
+
+# Configurar api do email no arquivo .env (opcional)
 EMAIL_USER=
 
 OAUTH_CLIENT_ID=
@@ -31,10 +42,19 @@ OAUTH_ACCESS_TOKEN=
 
 o git hub bloqueia o push do projeto, pois possui dados sensiveis no arquivo .env
 
-# Inicialização
-6 - Executar a api: node app.js
+# 3. Teste de conexão
 
-7 - Executar o arquivo index.html na pasta front
+- Na pasta serverV2 executar o comando node test.js
+
+# 4.Importar serviços (Obs: por padrão o banco não possui nenhum dado)
+- abrir pasta serverV2 no terminal
+
+- Importar serviços no banco: node services.js
+
+# Inicialização
+5 - Executar a api: node app.js
+
+6 - Executar o arquivo index.html na pasta front
 
 
 
