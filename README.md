@@ -1,6 +1,8 @@
 # Configuração do programa
-- Pasta front: front end da aplicação (index.html)
+- PASTA FRONT:
 
+- front end da aplicação (index.html)
+ 
 - PASTA SERVERV2:
 
 - .env variaveis de ambiente
